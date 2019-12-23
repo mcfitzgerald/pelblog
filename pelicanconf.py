@@ -3,12 +3,14 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Michael Fitzgerald'
-SITENAME = 'blog'
-SITEURL = ''
+SITENAME = 'mcfitz.info'
+SITEURL = 'http://mcfitz.info'
 
 PATH = 'content'
 
 TIMEZONE = 'America/New_York'
+
+DEFAULT_DATE = 'fs'
 
 DEFAULT_LANG = 'en'
 
