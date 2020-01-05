@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+
+<head>
+  {% block head %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/main.css" />
+  <title>{% block title %}{% endblock %} - My Webpage</title>
+  {% endblock %}
+</head>
+
+<body>
+  <header class="header">
+    <nav>
+
+      <div class="logo">
+        <a href="/">mcfitz.info</a>
+      </div>
+
+      <span class="navbar-toggle" id="js-navbar-toggle"><i class="fas fa-bars"></i></span>
+
+      <div class="site-links" id="js-menu">
+        {% for title, link in MENUITEMS %}
+        <li><a href="{{ link }}">{{ title }}</a></li>
+        {% endfor %}
+        {% if DISPLAY_PAGES_ON_MENU %}
+        {% for p in pages %}
+        <li{% if p == page %} class="active" {% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+          {% endfor %}
+          {% endif %}
+      </div>
+
+    </nav>
+  </header>
+
+  <div class="content">
+    <div class="wrapper">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </div>
+
+  {% block footer %}
+  <footer>
+    <div class="footer-content">
+      &copy; Copyright 2020 by Michael C. Fitzgerald.
+    </div>
+    <script src="https://kit.fontawesome.com/0b8b560164.js" crossorigin="anonymous"></script>
+    <script>
+      let mainNav = document.getElementById('js-menu');
+      let navBarToggle = document.getElementById('js-navbar-toggle');
+
+      navBarToggle.addEventListener('click', function() {
+        mainNav.classList.toggle('active');
+      });
+    </script>
+  </footer>
+  {% endblock %}
+
+</body>
+
+</html>

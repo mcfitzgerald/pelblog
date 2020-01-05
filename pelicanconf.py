@@ -14,6 +14,8 @@ DEFAULT_DATE = 'fs'
 
 DEFAULT_LANG = 'en'
 
+DISPLAY_PAGES_ON_MENU = True
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
