@@ -2,3 +2,4 @@ venv
 output
 sandbox
 singlehtml
+.DS_Store
