@@ -16,6 +16,10 @@ DEFAULT_LANG = 'en'
 
 DISPLAY_PAGES_ON_MENU = True
 
+TYPOGRIFY = True
+
+THEME = './hardwired_v1'
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
