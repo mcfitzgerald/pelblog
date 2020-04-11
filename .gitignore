@@ -1,7 +1,7 @@
 venv
 output
 sandbox
-singlehtml
+pelican_doc_offline
 .DS_Store
 .vscode
 __pycache__

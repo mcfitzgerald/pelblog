@@ -1,14 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from datetime import date
 
-AUTHOR = 'Michael Fitzgerald'
+AUTHOR = 'Michael C. Fitzgerald'
 SITENAME = 'mcfitz.info'
 SITEURL = ''
 
 PATH = 'content'
 
 TIMEZONE = 'America/New_York'
+
+CURRENT_YEAR = date.today().year
 
 DEFAULT_DATE = 'fs'
 
